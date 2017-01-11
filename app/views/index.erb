@@ -1,0 +1,18 @@
+  <h1>Abuelita Sordita Blog</h1>
+
+  <img src="http://www.you-can-be-funny.com/images/grandmawithcigar.jpg" alt="Grandma´s profile pic">
+
+  <% if @abuelita %>
+  <p><span id="grandma_says"><%= @abuelita %></span></p>
+  <% end %>
+
+  <p id='resp'></p>
+
+  <h4 style="text-align:bottom;"><font color='A1B8DA'>¡¡ Ánda, cuéntale más la abuela !!</font></h4>
+
+  <h4 style="text-align:bottom;"><font color='A1B8DA'>¡¡ Ánda, cuéntale a la abuela !!</font></h4>
+
+  <form id='form' action="/abuelita" method="post">
+    <input type="text" id='text_in' name="user_input" size='31' required autofocus>
+    <input type="submit" value="(^_^)">
+  </form>
